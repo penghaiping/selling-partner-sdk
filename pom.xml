@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.penghaiping</groupId>
+    <artifactId>selling-partner-sdk</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <modules>
+        <module>sellingpartner-authorization-api</module>
+        <module>sellingpartner-catalog-items-api</module>
+        <module>sellingpartner-fba-inbound-eligibility-api</module>
+        <module>sellingpartner-fba-inventory-api</module>
+        <module>sellingpartner-fba-small-and-light-api</module>
+        <module>sellingpartner-feeds-api</module>
+        <module>sellingpartner-finances-api</module>
+        <module>sellingpartner-fulfillment-inbound-api</module>
+        <module>sellingpartner-fulfillment-outbound-api</module>
+        <module>sellingpartner-merchant-fulfillment-api</module>
+        <module>sellingpartner-messaging-api</module>
+        <module>sellingpartner-notifications-api</module>
+        <module>sellingpartner-orders-api</module>
+        <module>sellingpartner-product-fees-api</module>
+        <module>sellingpartner-product-pricing-api</module>
+        <module>sellingpartner-reports-api</module>
+        <module>sellingpartner-sales-api</module>
+        <module>sellingpartner-sellers-api</module>
+        <module>sellingpartner-services-api</module>
+        <module>sellingpartner-shipping-api</module>
+        <module>sellingpartner-solicitations-api</module>
+        <module>sellingpartner-uploads-api</module>
+        <module>sellingpartner-aa-api</module>
+    </modules>
+
+    <packaging>pom</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.resourceEncoding>UTF-8</project.build.resourceEncoding>
+        <maven.test.skip>true</maven.test.skip>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.1.2</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
