@@ -78,7 +78,7 @@ public class SellersApiTest {
 
 
         System.out.println(response.getPayload());
-        // TODO: test validations
+
     }
     
 }
