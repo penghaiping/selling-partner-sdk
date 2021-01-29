@@ -13,7 +13,10 @@
 
 package com.amazon.spapi.sellers.api;
 
-import com.amazon.spapi.sellers.ApiException;
+import com.amazon.spapi.SellingPartnerAPIAA.AWSAuthenticationCredentials;
+import com.amazon.spapi.SellingPartnerAPIAA.AWSAuthenticationCredentialsProvider;
+import com.amazon.spapi.SellingPartnerAPIAA.LWAAuthorizationCredentials;
+import com.amazon.spapi.client.ApiException;
 import com.amazon.spapi.sellers.model.GetMarketplaceParticipationsResponse;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -42,8 +45,39 @@ public class SellersApiTest {
      */
     @Test
     public void getMarketplaceParticipationsTest() throws ApiException {
-        GetMarketplaceParticipationsResponse response = api.getMarketplaceParticipations();
+        AWSAuthenticationCredentials awsAuthenticationCredentials=AWSAuthenticationCredentials.builder()
+                //IAM user的accessKeyId
+                .accessKeyId("accessKeyId")
+                //IAM user的secretKey
+                .secretKey("secretKey")
+                .region("us-east-1")
+                .build();
+        AWSAuthenticationCredentialsProvider awsAuthenticationCredentialsProvider=AWSAuthenticationCredentialsProvider.builder()
+               //IAM role，特别注意：最好用IAM role当做IAM ARN去申请app
+                // 而且IAM user需要添加内联策略STS关联上IAM role，具体操作看：https://www.spapi.org.cn/cn/model2/_2_console.html
+                .roleArn("arn:aws:iam::130533047451:role/SpapiWorkshopStack-spapirole3035A53F-E20BPTWXFW8U")
+                .roleSessionName("myrolesessioname121231313")
+                .build();
+        LWAAuthorizationCredentials lwaAuthorizationCredentials = LWAAuthorizationCredentials.builder()
+                //申请app后LWA中的clientId
+                .clientId("amzn1.application-oa2-client.xxxxxxxxxx")
+                //申请app后LWA中的clientSecret
+                .clientSecret("fkdfjaskfasfksa")
+                //店铺授权时产生的refreshToken或者app自授权生成的
+                .refreshToken("Atzr|ZLo8hjtuBrYlgBh0Sd6QAfhsafsafskf98fsafhjsafhasjfhasjfhsafsafskf98fsafhjsafhasjfhasj")
+                .endpoint("https://api.amazon.com/auth/o2/token")
+                .build();
+        SellersApi sellersApi = new SellersApi.Builder()
+                .awsAuthenticationCredentials(awsAuthenticationCredentials)
+                .lwaAuthorizationCredentials(lwaAuthorizationCredentials)
+                .awsAuthenticationCredentialsProvider(awsAuthenticationCredentialsProvider)
+                .endpoint("https://sellingpartnerapi-na.amazon.com")
+                .build();
 
+        GetMarketplaceParticipationsResponse response = sellersApi.getMarketplaceParticipations();
+
+
+        System.out.println(response.getPayload());
         // TODO: test validations
     }
     
