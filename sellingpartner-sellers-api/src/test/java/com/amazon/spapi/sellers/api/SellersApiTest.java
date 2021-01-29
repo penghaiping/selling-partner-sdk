@@ -21,10 +21,6 @@ import com.amazon.spapi.sellers.model.GetMarketplaceParticipationsResponse;
 import org.junit.Test;
 import org.junit.Ignore;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 /**
  * API tests for SellersApi
@@ -32,9 +28,7 @@ import java.util.Map;
 @Ignore
 public class SellersApiTest {
 
-    private final SellersApi api = new SellersApi();
 
-    
     /**
      * 
      *
@@ -50,6 +44,7 @@ public class SellersApiTest {
                 .accessKeyId("accessKeyId")
                 //IAM user的secretKey
                 .secretKey("secretKey")
+                //这里按照amazon对不同region的分区填写，例子是北美地区的
                 .region("us-east-1")
                 .build();
         AWSAuthenticationCredentialsProvider awsAuthenticationCredentialsProvider=AWSAuthenticationCredentialsProvider.builder()
