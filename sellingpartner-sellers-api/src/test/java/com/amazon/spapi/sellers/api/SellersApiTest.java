@@ -50,7 +50,7 @@ public class SellersApiTest {
         AWSAuthenticationCredentialsProvider awsAuthenticationCredentialsProvider=AWSAuthenticationCredentialsProvider.builder()
                //IAM role，特别注意：最好用IAM role当做IAM ARN去申请app
                 // 而且IAM user需要添加内联策略STS关联上IAM role，具体操作看：https://www.spapi.org.cn/cn/model2/_2_console.html
-                .roleArn("arn:aws:iam::130533047451:role/SpapiWorkshopStack-spapirole3035A53F-E20BPTWXFW8U")
+                .roleArn("arn:aws:iam::xxxxxxxxx:role/xxxxxxxxxx")
                 .roleSessionName("myrolesessioname121231313")
                 .build();
         LWAAuthorizationCredentials lwaAuthorizationCredentials = LWAAuthorizationCredentials.builder()
