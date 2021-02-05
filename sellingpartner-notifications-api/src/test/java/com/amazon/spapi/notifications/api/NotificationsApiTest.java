@@ -13,7 +13,7 @@
 
 package com.amazon.spapi.notifications.api;
 
-import com.amazon.spapi.notifications.ApiException;
+import com.amazon.spapi.client.ApiException;
 import com.amazon.spapi.notifications.model.CreateDestinationRequest;
 import com.amazon.spapi.notifications.model.CreateDestinationResponse;
 import com.amazon.spapi.notifications.model.CreateSubscriptionRequest;

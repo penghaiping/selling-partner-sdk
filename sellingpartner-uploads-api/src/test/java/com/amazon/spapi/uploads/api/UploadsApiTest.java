@@ -13,7 +13,7 @@
 
 package com.amazon.spapi.uploads.api;
 
-import com.amazon.spapi.uploads.ApiException;
+import com.amazon.spapi.client.ApiException;
 import com.amazon.spapi.uploads.model.CreateUploadDestinationResponse;
 import org.junit.Test;
 import org.junit.Ignore;

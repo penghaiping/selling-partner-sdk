@@ -13,7 +13,7 @@
 
 package com.amazon.spapi.merchantfulfillment.api;
 
-import com.amazon.spapi.merchantfulfillment.ApiException;
+import com.amazon.spapi.client.ApiException;
 import com.amazon.spapi.merchantfulfillment.model.CancelShipmentResponse;
 import com.amazon.spapi.merchantfulfillment.model.CreateShipmentRequest;
 import com.amazon.spapi.merchantfulfillment.model.CreateShipmentResponse;

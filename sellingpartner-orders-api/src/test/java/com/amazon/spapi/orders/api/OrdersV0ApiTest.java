@@ -13,7 +13,7 @@
 
 package com.amazon.spapi.orders.api;
 
-import com.amazon.spapi.orders.ApiException;
+import com.amazon.spapi.client.ApiException;
 import com.amazon.spapi.orders.model.GetOrderAddressResponse;
 import com.amazon.spapi.orders.model.GetOrderBuyerInfoResponse;
 import com.amazon.spapi.orders.model.GetOrderItemsBuyerInfoResponse;

@@ -13,7 +13,7 @@
 
 package com.amazon.spapi.shipping.api;
 
-import com.amazon.spapi.shipping.ApiException;
+import com.amazon.spapi.client.ApiException;
 import com.amazon.spapi.shipping.model.CancelShipmentResponse;
 import com.amazon.spapi.shipping.model.CreateShipmentRequest;
 import com.amazon.spapi.shipping.model.CreateShipmentResponse;

@@ -13,7 +13,7 @@
 
 package com.amazon.spapi.reports.api;
 
-import com.amazon.spapi.reports.ApiException;
+import com.amazon.spapi.client.ApiException;
 import com.amazon.spapi.reports.model.CancelReportResponse;
 import com.amazon.spapi.reports.model.CancelReportScheduleResponse;
 import com.amazon.spapi.reports.model.CreateReportResponse;

@@ -13,7 +13,7 @@
 
 package com.amazon.spapi.messaging.api;
 
-import com.amazon.spapi.messaging.ApiException;
+import com.amazon.spapi.client.ApiException;
 import com.amazon.spapi.messaging.model.CreateAmazonMotorsRequest;
 import com.amazon.spapi.messaging.model.CreateAmazonMotorsResponse;
 import com.amazon.spapi.messaging.model.CreateConfirmCustomizationDetailsRequest;

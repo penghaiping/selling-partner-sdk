@@ -13,7 +13,7 @@
 
 package com.amazon.spapi.solicitations.api;
 
-import com.amazon.spapi.solicitations.ApiException;
+import com.amazon.spapi.client.ApiException;
 import com.amazon.spapi.solicitations.model.CreateProductReviewAndSellerFeedbackSolicitationResponse;
 import com.amazon.spapi.solicitations.model.GetSolicitationActionsForOrderResponse;
 import org.junit.Test;

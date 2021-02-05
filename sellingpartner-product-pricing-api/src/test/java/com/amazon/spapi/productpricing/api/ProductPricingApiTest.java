@@ -13,7 +13,7 @@
 
 package com.amazon.spapi.productpricing.api;
 
-import com.amazon.spapi.productpricing.ApiException;
+import com.amazon.spapi.client.ApiException;
 import com.amazon.spapi.productpricing.model.GetOffersResponse;
 import com.amazon.spapi.productpricing.model.GetPricingResponse;
 import org.junit.Test;

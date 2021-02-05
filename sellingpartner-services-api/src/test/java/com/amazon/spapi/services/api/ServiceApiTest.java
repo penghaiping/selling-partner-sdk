@@ -13,7 +13,7 @@
 
 package com.amazon.spapi.services.api;
 
-import com.amazon.spapi.services.ApiException;
+import com.amazon.spapi.client.ApiException;
 import com.amazon.spapi.services.model.AddAppointmentRequest;
 import com.amazon.spapi.services.model.CancelServiceJobByServiceJobIdResponse;
 import com.amazon.spapi.services.model.CompleteServiceJobByServiceJobIdResponse;
