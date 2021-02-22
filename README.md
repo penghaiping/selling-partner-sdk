@@ -30,3 +30,7 @@ MWS与SP-API的区别：
        3.SP-API提供比Amazon MWS更好的数据访问控制。开发人员只能请求访问他们需要的数据，而销售商可以在API部分、操作或数据资源级别授予权限
        4.SP-API允许您使用AWS身份和访问管理(IAM)直接获取和管理自己的身份验证凭据。对于Amazon MWS，您可以使用特殊的注册工作流接收Amazon提供的身份验证凭证，并且通过打开与Amazon MWS支持的联系方式获得新的凭证
        5.SP-API使用AWS签名版本4进行身份验证。Amazon MWS使用签名版本2
+
+对你有用的话，请penghp喝杯咖啡吧：
+    
+   <img src="https://github.com/penghaiping/selling-partner-sdk/blob/master/images/微信.jpg" width="200" height="200"/>     <img src="https://github.com/penghaiping/selling-partner-sdk/blob/master/images/支付宝.jpg" width="200" height="200"/>
