@@ -1,3 +1,4 @@
+### 此工程不再维护，已经提取精炼了一版更简洁的sdk请移步到 https://github.com/penghaiping/amazon-sp-api/  ！！！
 # selling-partner-sdk
 amazon selling partner sdk
 背景：
